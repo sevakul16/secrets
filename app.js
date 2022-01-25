@@ -38,7 +38,7 @@ main().catch(err => console.log(err));
 
 async function main(){
   //await mongoose.connect("mongodb://localhost:27017/userDB");
-  await mongoose.connect('mongodb+srv://admin-vsevolod:Test123@cluster0.29c09.mongodb.net/userDB');
+  await mongoose.connect(process.env.MONGO_ATLAS_LINK);
 
 }
 //-----------------------------------------
