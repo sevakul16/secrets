@@ -2,6 +2,8 @@ require('dotenv').config();
 const express = require("express");
 const ejs = require("ejs");
 const mongoose = require("mongoose");
+//const encrypt = require("mongoose-encryption");
+//const md5 = require("md5");
 // const bcrypt = require("bcrypt");
 // const saltRounds = 10;
 const session = require('express-session');
@@ -12,13 +14,6 @@ const findOrCreate = require('mongoose-findorcreate');
 const FacebookStrategy = require("passport-facebook");
 
 const app = express();
-
-//Please dont steal it
-CLIENT_ID_GOOGLE=182730054715-am12e5bg67bsqjgqhe3meeft304hau9e.apps.googleusercontent.com
-CLIENT_SECRET_GOOGLE=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
-FACEBOOK_APP_ID=2989564394639041
-FACEBOOK_APP_SECRET=fcad51205f3a9ed0e8a7ffb806de1caf
-SESSION_SECRET=Our little secret.
 
 app.use(express.static("public"));
 app.set("view engine", "ejs");
