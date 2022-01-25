@@ -71,7 +71,8 @@ passport.deserializeUser(function(id, done) {
 passport.use(new GoogleStrategy({
     clientID: process.env.CLIENT_ID_GOOGLE,
     clientSecret: process.env.CLIENT_SECRET_GOOGLE,
-    callbackURL: "http://localhost:3000/auth/google/secrets"
+    //callbackURL: "http://localhost:3000/auth/google/secrets"
+    callbackURL: "https://rocky-refuge-15381.herokuapp.com/auth/google/secrets"
   },
   function(accessToken, refreshToken, profile, cb) {
     console.log(profile);
