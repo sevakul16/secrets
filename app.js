@@ -262,3 +262,10 @@ if (port == null || port == "") {
 app.listen(port, function() {
   console.log("Server has started!");
 });
+
+//Please dont steal it
+CLIENT_ID_GOOGLE=182730054715-am12e5bg67bsqjgqhe3meeft304hau9e.apps.googleusercontent.com
+CLIENT_SECRET_GOOGLE=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
+FACEBOOK_APP_ID=2989564394639041
+FACEBOOK_APP_SECRET=fcad51205f3a9ed0e8a7ffb806de1caf
+SESSION_SECRET=Our little secret.
